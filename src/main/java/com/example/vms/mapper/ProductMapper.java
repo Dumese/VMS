@@ -6,6 +6,6 @@ import com.example.vms.data.vo.ProductVO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface ProductMapper extends BaseMapper<ProductEntity> {
+public interface ProductMapper extends BaseMapper<ProductVO> {
 
 }

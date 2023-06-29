@@ -1,18 +1,12 @@
-package com.example.vms.data.vo;
+package com.example.vms.data.dto;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import static com.baomidou.mybatisplus.annotation.IdType.AUTO;
-
 @Data
-@TableName("product")
-public class ProductVO {
+public class ProductDTO {
     /**
      * id
      */
-    @TableId(type = AUTO)
     private Long id;
     /**
      * 商品名称

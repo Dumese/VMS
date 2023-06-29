@@ -5,13 +5,17 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
+import static com.baomidou.mybatisplus.annotation.IdType.INPUT;
+
 @Data
 @TableName("product")
 public class ProductEntity {
     /**
      * id
      */
-    @TableId
+    @TableId()
     private Long id;
     /**
      * 商品名称
@@ -37,17 +41,17 @@ public class ProductEntity {
      *储存量
      */
     @TableField
-    private String stock;
+    private Integer stock;
     /**
      *原价
      */
     @TableField
-    private String originalPrice;
+    private BigDecimal originalPrice;
     /**
      *售价
      */
     @TableField
-    private String price;
+    private BigDecimal price;
     /**
      * 删除状态 0 否 1 是
      */

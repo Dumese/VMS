@@ -32,11 +32,9 @@ public class UserServiceImpl implements UserService {
             if(userEntity.getPassword().equals(password)){
                 return SessionMaker(userEntity);
             }
-            System.out.println("ID或密码错误。请重新登录！");
             return new RuntimeException("ID或密码错误。请重新登录！");
 
         }
-        System.out.println("未查询到该用户，请检查ID！");
         return new RuntimeException("未查询到该用户，请检查ID！");
     }
 

@@ -4,12 +4,9 @@ import com.example.vms.data.dto.UserLoginDTO;
 import com.example.vms.data.vo.UserRegisterVO;
 import com.example.vms.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("/user")
 public class UserController {
     @Autowired
